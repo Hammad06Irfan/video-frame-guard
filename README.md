@@ -140,9 +140,9 @@ cd ../..
 
 ### Example Engine Output
 ```text
-==========================================
-  AMD Frame Guard - C++ Inference Engine   
-==========================================
+===========================================
+  Video Frame Guard - C++ Inference Engine   
+===========================================
 [*] Loading Model: models/model.onnx
 [*] Target Frame:  data/dataset/val/torn/frame_0162_torn.png
 [*] Benchmarking inference over 50 iterations...
@@ -151,9 +151,9 @@ cd ../..
   - noise: 0.0947117%
   - torn: 87.1303%
 
-------------------------------------------
+-------------------------------------------
 [+] Result: Frame Classified as [torn]
 [+] Average Latency: 1.46238 ms
 [+] Throughput:      683 FPS
-------------------------------------------
+-------------------------------------------
 ```
