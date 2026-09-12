@@ -157,8 +157,3 @@ cd ../..
 [+] Throughput:      683 FPS
 ------------------------------------------
 ```
-
----
-
-## License
-Distributed under the MIT License. See `LICENSE` for details.
