@@ -1,4 +1,4 @@
-# Video Frame Guard 🛡️
+# Video Frame Guard 
 
 A low-latency, end-to-end computer vision pipeline and C++ inference engine designed to detect, classify, and isolate real-time GPU rendering and display corruptions.
 
@@ -11,7 +11,7 @@ A low-latency, end-to-end computer vision pipeline and C++ inference engine desi
 
 ---
 
-## 🎯 Motivation
+## Motivation
 
 In modern GPU display pipelines and video processing stacks, visual corruptions can introduce subtle yet severe failures:
 * **V-Sync / Buffer Swap Desync:** Horizontal tearing across frame slices.
@@ -22,7 +22,7 @@ Writing heuristic, hand-crafted rules to detect every possible failure mode is b
 
 ---
 
-## ⚡ Performance & Benchmarks
+## Performance & Benchmarks
 
 Benchmarked on Apple Silicon CPU across 50 execution runs (224x224x3 input resolution, single-frame batch size N=1):
 
@@ -35,7 +35,7 @@ Benchmarked on Apple Silicon CPU across 50 execution runs (224x224x3 input resol
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 [ Synthetic Corruption Pipeline ]
@@ -58,7 +58,7 @@ Benchmarked on Apple Silicon CPU across 50 execution runs (224x224x3 input resol
 
 ---
 
-## 🔬 Systems & Engineering Insights
+## Systems & Engineering Insights
 
 ### 1. In-Memory Planar Layout (`HWC` to `CHW`)
 Standard image loaders decode pixel data into contiguous interleaved bytes: `[R0, G0, B0, R1, G1, B1, ...]` (**HWC**).
@@ -74,7 +74,7 @@ Post-training dynamic **INT8 quantization** was evaluated to compare execution f
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 video-frame-guard/
@@ -99,7 +99,7 @@ video-frame-guard/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 * Python 3.10+
@@ -160,13 +160,5 @@ cd ../..
 
 ---
 
-## 📜 Resume Ready Bullet Points
-
-* **End-to-End Deep Learning Pipeline:** Designed a computer vision system in **Python/PyTorch** using MobileNetV3 transfer learning to detect GPU display artifacts (tearing, macroblocking, bit noise) with **88.7% validation accuracy** across a custom procedural dataset.
-* **High-Throughput C++ Engine:** Engineered a standalone **C++ inference runner** using the **ONNX Runtime C++ API**, achieving an average latency of **1.46 ms (~680 FPS)** to easily satisfy real-time display refresh constraints (<6.94 ms for 144 Hz).
-* **Low-Level Preprocessing & Profiling:** Wrote the C++ data pipeline to convert raw RGB bytes into normalized planar (CHW) float buffers for tensor input, and benchmarked the FP32 model against dynamic INT8 quantization to evaluate file size and runtime overhead.
-
----
-
-## 📄 License
+## License
 Distributed under the MIT License. See `LICENSE` for details.
