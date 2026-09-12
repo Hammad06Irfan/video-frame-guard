@@ -1,0 +1,3 @@
+/Users/hammad.i/Desktop/VS_Code/Video-Frame-Guard/cpp/build/CMakeFiles/frame_guard.dir
+/Users/hammad.i/Desktop/VS_Code/Video-Frame-Guard/cpp/build/CMakeFiles/edit_cache.dir
+/Users/hammad.i/Desktop/VS_Code/Video-Frame-Guard/cpp/build/CMakeFiles/rebuild_cache.dir

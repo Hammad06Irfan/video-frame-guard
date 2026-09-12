@@ -1,0 +1,9 @@
+torch
+torchvision
+torchaudio
+onnx
+onnxruntime
+opencv-python
+numpy
+pillow
+tqdm
